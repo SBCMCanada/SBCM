@@ -6,7 +6,6 @@
     "bower": "^1.4.1",
     "express": "^4.12.3",
     "method-override": "^2.3.2",
-    "mongoose": "^4.0.2",
-    "mongodb": "3.0.2" 
+    "mongoose": "^4.0.2"
   }
 }
