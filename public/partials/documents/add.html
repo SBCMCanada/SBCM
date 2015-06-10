@@ -1,0 +1,30 @@
+<h2>Upload Document</h2>
+
+<form class="form-horizontal" action="/rest/documents" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+  <label for="inputTitle" class="col-sm-2 control-label">Title</label>
+  <div class="col-sm-10">
+    <input name="title" id="inputTitle" type="text" class="form-control" placeholder="Enter title" required autofocus />
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="inputNotes" class="col-sm-2 control-label">Notes</label>
+  <div class="col-sm-10">
+    <input name="notes" id="inputNotes" type="text" class="form-control" placeholder="Enter short note (max 255 chars)" required autofocus />
+  </div>
+</div
+
+<div class="form-group">
+  <label for="inputFileUpload" class="col-sm-2 control-label">Document</label>
+  <input type="file" id="inputFileUpload" name="fileUpload" />
+</div>
+
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button type="submit" class="btn btn-default">Upload</button>
+  </div>
+</div>
+
+</form>

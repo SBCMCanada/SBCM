@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <% include ./partials/template/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ./partials/template/header %>
+    </header>
+
+    <main>
+        <!--
+        <div class="jumbotron">
+            <h1>Home</h1>
+            <p>Use the upload function to add new documents.</p>
+        </div>
+        -->
+
+        <div ng-view></div>
+
+    </main>
+
+    <footer>
+        <% include ./partials/template/footer %>
+    </footer>
+
+</body>
+</html>

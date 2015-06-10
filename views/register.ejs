@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <% include ./partials/template/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ./partials/template/header %>
+    </header>
+
+    <main>
+      <form class="form-signin" action="/login/new" method="post">
+      <h2 class="form-signin-heading">New Account</h2>
+
+      <label for="inputEmail">Email address</label>
+      <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+      <label for="inputUsername">Username</label>
+      <input name="username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+
+      <label for="inputPassword">Password</label>
+      <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+      <label for="inputPassword2">Re-type Password</label>
+      <input name="password2" type="password" id="inputPassword2" class="form-control" placeholder="Re-type Password" required>
+
+      <!-- TODO: do password check and other validation @ controller with angularjs -->
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onsubmit="checkPasswords('inputPassword','inputPassword2');">Create</button>
+
+    </form>
+    </main>
+
+    <footer>
+        <% include ./partials/template/footer %>
+    </footer>
+
+</body>
+</html>

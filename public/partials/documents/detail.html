@@ -1,0 +1,30 @@
+<ol class="breadcrumb">
+  <li><a href="/#/documents">Documents</a></li>
+  <li class="active">{{doc.title}}</li>
+</ol>
+
+<!--<div class="page-header">-->
+    <h2>
+      {{doc.title}}
+      <small>{{doc.fileName}}</small>
+    </h2>
+  <!-- TODO: potentially put the button here-->
+<!--</div>-->
+
+<!--
+<h5 style="color:#999">
+  <span>{{doc.fileName}}</span> (<span>{{doc.mime}}</span>)
+</h5>
+-->
+<a role="button" href="/rest/data/{{doc.dataId}}" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-download-alt"></span>
+  Download
+</a>
+
+
+<!--<p>Document id: <span>{{doc._id}}</span></p> -->
+
+<p>&nbsp;</p>
+<div ng-if="doc.mime=='image/jpeg'">
+<img class="img-responsive img-rounded" ng-src="/rest/data/{{doc.dataId}}" alt="Preview image"/>
+</div>
