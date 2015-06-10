@@ -22,6 +22,12 @@ var models = require('./models');
 
 //Init express app
 var app = express();
+var server = app.listen(process.env.PORT || 3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("Server listening on " + server.address().port);
+});
+
 
 console.log("starting app");
 
